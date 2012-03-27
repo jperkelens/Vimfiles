@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/jerkelens/Projects/exodia/lib'
-let g:netrw_dirhist_2='/Users/jerkelens/Projects/exodia/lib/reports'
-let g:netrw_dirhist_3='/Users/jerkelens/Projects/exodia'
-let g:netrw_dirhist_4='/Users/jerkelens/Projects/exodia/lib'
-let g:netrw_dirhist_5='/Users/jerkelens/Projects/exodia/lib/helpers'

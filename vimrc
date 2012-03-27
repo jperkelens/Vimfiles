@@ -6,10 +6,39 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
+
+" After Command-T installs, make sure you run:
+"   cd ~/.vim/"Bundle/Command-T/ruby/command-t/
+"   ruby extconf.rb
+"   make
+Bundle 'Command-T'
+" EasyMotion
+Bundle 'EasyMotion'
+" Buffer explorer
 Bundle 'bufexplorer.zip'
+" Most recently used buffer
 Bundle 'bufmru.vim'
-Bundle 'https://github.com/wincent/Command-T.git'
-Bundle 'https://github.com/pangloss/vim-javascript.git'
+" Change surrounding characters
+Bundle 'surround.vim'
+" Text alignment
+Bundle 'Tabular'
+" Code snipets
+Bundle 'snipMate'
+" Fast code commenting
+Bundle 'The-NERD-Commenter'
+" Project folder
+Bundle 'The-NERD-tree'
+" Stylus
+Bundle 'vim-stylus'
+
+" -------- Syntax Coloring and indents -------
+
+" Javascript text hilighting
+Bundle 'pangloss/vim-javascript.git'
+" Cucumber
+Bundle 'cucumber.zip'
+" Clojure
+Bundle 'VimClojure'
 
 set ar
 set expandtab
@@ -80,9 +109,4 @@ let g:bufExplorerShowRelativePath=1
 
 " command-t
 let g:CommandTMaxFiles=10000
-
-" clojure
-let g:vimclojure#HighlightBuiltins=1
-au BufRead,BufNewFile *.clj set filetype=clojure
-
 
