@@ -30,6 +30,12 @@ Bundle 'The-NERD-Commenter'
 Bundle 'The-NERD-tree'
 " Stylus
 Bundle 'vim-stylus'
+" Autoclose parens etc.
+Bundle 'https://github.com/Townk/vim-autoclose.git'
+" Quoting and blocking 
+Bundle 'https://github.com/tpope/vim-surround.git'
+" Coffee Script
+Bundle 'https://github.com/vim-scripts/vim-coffee-script.git'
 
 " -------- Syntax Coloring and indents -------
 
@@ -59,6 +65,19 @@ set wrap
 
 " functions
 
+" Align Fit Tables
+function! s:alignFitTables()
+  let p = '^\s*|\s.*\s|\s*$'
+  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+    Tabularize/|/l1
+    normal! 0
+    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+  endif
+endfunction
+command! -nargs=0 AlignFitTables call s:alignFitTables()
+
 function! s:SetTestFile()
   let g:CurrentTestFile = expand("%")
   let g:CurrentTestExt  = expand("%:e")
@@ -77,6 +96,8 @@ function! s:RunTestFile()
   if g:CurrentTestExt == "js"
     execute "w\|!TEST=true NODE_PATH=test:lib expresso -I test -I lib -t 250
       \ -s " . g:CurrentTestFile 
+  elseif g:CurrentTestExt == "clj"
+    execute "w\|!echo \"I can't do this yet\""
   endif
 endfunction
 command! -nargs=0 RunTestFile call s:RunTestFile()
@@ -101,12 +122,33 @@ noremap <Right> <nop>
 map <Leader>r :RunTestFile<CR>
 map <Leader>sv :so ~/.vimrc<CR>
 map <Leader>; :SetTestFile<CR>
+noremap <Leader>at :AlignFitTables<CR>
+noremap <Leader>n :NERDTreeToggle<CR>
+nmap <Leader>as ysiw
 
 " bufexplorer
 let g:bufExplorerDefaultHelp=1
 let g:bufExplorerShowDirectories=0
 let g:bufExplorerShowRelativePath=1
 
+" clojure
+let g:vimclojure#HighlightBuiltins=1
+au BufRead,BufNewFile *.clj set filetype=clojure
+
 " command-t
 let g:CommandTMaxFiles=10000
+
+" NERDTree ********************************************************************
+
+" User instead of Netrw when doing an edit /foobar
+let NERDTreeHijackNetrw=1
+
+" Single click for everything
+let NERDTreeMouseMode=1
+
+" Ignore
+let NERDTreeIgnore=['\.git','\.DS_Store','\.pdf','\.png','\.jpg','\.gif']
+
+" Quit on open
+let NERDTreeQuitOnOpen=1
 
