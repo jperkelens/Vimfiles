@@ -2,7 +2,11 @@
 "
 " File:        mayansmoke.vim
 " Description: Vim color scheme file
+<<<<<<< HEAD
 " Maintainer:  Jeet Sukumaran (GUI colors); Clayton Parker (cterm colors)
+=======
+" Maintainer:  Jeet Sukumaran
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 "
 " =============================================================================
 
@@ -18,13 +22,20 @@ let colors_name = "mayansmoke"
 
 "  Normal Color {{{1
 " =============================================================================
+<<<<<<< HEAD
 hi Normal gui=NONE guifg=Black guibg=#F4F4E8
+=======
+hi Normal gui=NONE guifg=Black guibg=#F8F8EE
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 " }}}
 
 "  Highlight Groups {{{1
 " =============================================================================
 " Groups (see ':help highlight-groups'):
+<<<<<<< HEAD
 "    ColorColumn     highlight to use with ':set colorcolumn'
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 "    Cursor          the character under the cursor
 "    CursorIM        like Cursor, but used when in IME mode |CursorIM|
 "    CursorColumn    the screen column that the cursor is in when 'cursorcolumn' is set
@@ -67,6 +78,7 @@ hi Normal gui=NONE guifg=Black guibg=#F4F4E8
 "    VisualNOS       Visual mode selection when vim is "Not Owning the Selection".
 "    WarningMsg      warning messages
 "    WildMenu        current match in 'wildmenu' completion
+<<<<<<< HEAD
 hi ColorColumn  guifg=NONE              guibg=#EEEEDD
 hi Cursor       guifg=bg                guibg=fg                gui=NONE
 if hlexists('MayanSmokeCursorLine')
@@ -82,11 +94,18 @@ else
     hi CursorColumn guifg=NONE              guibg=#FFFDD0       gui=NONE
     hi CursorLine   guifg=NONE              guibg=#FFFDD0       gui=NONE
 endif
+=======
+hi Cursor       guifg=bg                guibg=fg                gui=NONE
+hi CursorColumn guifg=NONE              guibg=beige             gui=NONE
+hi CursorIM     guifg=bg                guibg=fg                gui=NONE
+hi CursorLine   guifg=NONE              guibg=beige             gui=NONE
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 hi CursorIM     guifg=bg                guibg=fg                gui=NONE
 hi lCursor      guifg=bg                guibg=fg                gui=NONE
 hi DiffAdd      guifg=NONE              guibg=SeaGreen1         gui=NONE
 hi DiffChange   guifg=NONE              guibg=LightSkyBlue1     gui=NONE
 hi DiffDelete   guifg=NONE              guibg=LightCoral        gui=NONE
+<<<<<<< HEAD
 hi DiffText     guifg=black             guibg=LightCyan1        gui=NONE
 hi Directory    guifg=#1600FF           guibg=bg                gui=NONE
 hi ErrorMsg     guifg=Red2              guibg=NONE              gui=NONE
@@ -132,24 +151,60 @@ elseif exists('g:mayansmoke_special_key_visibility') && g:mayansmoke_special_key
     hi SpecialKey   guifg=bisque3       guibg=NONE              gui=NONE
 else
     hi SpecialKey   guifg=white         guibg=ivory3            gui=NONE
+=======
+hi DiffText     guifg=NONE              guibg=yellow            gui=NONE
+hi Directory    guifg=#1600FF           guibg=bg                gui=NONE
+hi ErrorMsg     guifg=Red2              guibg=NONE              gui=bold
+hi FoldColumn   guifg=LightSteelBlue4   guibg=#F8F8EE           gui=bold
+hi Folded       guifg=SteelBlue4        guibg=Gainsboro         gui=italic
+hi IncSearch    guifg=white             guibg=red               gui=bold
+hi LineNr       guifg=#FEFEFC           guibg=LightSteelBlue    gui=NONE
+hi MatchParen   guifg=White             guibg=MediumPurple1     gui=NONE
+hi ModeMsg      guifg=White             guibg=tomato            gui=bold
+hi MoreMsg      guifg=SeaGreen4         guibg=bg                gui=bold
+hi NonText      guifg=LightSteelBlue4   guibg=bg                gui=bold
+hi Pmenu        guifg=Black             guibg=PaleTurquoise3    gui=NONE
+hi PmenuSbar    guifg=White             guibg=PowderBlue        gui=NONE
+hi PmenuSel     guifg=White             guibg=Black             gui=NONE
+hi PmenuThumb   guifg=SkyBlue3          guibg=White             gui=reverse
+hi Question     guifg=Chartreuse4       guibg=bg                gui=bold
+hi SignColumn   guifg=LightSteelBlue4   guibg=#F8F8EE           gui=bold
+hi Search       guifg=white             guibg=red               gui=NONE
+if exists('g:mayansmoke_special_key_visibility') && g:mayansmoke_special_key_visibility >= 2
+    hi SpecialKey   guifg=black             guibg=NavajoWhite       gui=NONE
+elseif exists('g:mayansmoke_special_key_visibility') && g:mayansmoke_special_key_visibility == 0
+    hi SpecialKey   guifg=#cccccc           guibg=NONE              gui=NONE
+else
+    hi SpecialKey   guifg=white             guibg=ivory3            gui=NONE
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 endif
 hi SpellBad     guisp=Firebrick2                                gui=undercurl
 hi SpellCap     guisp=Blue                                      gui=undercurl
 hi SpellLocal   guisp=DarkCyan                                  gui=undercurl
 hi SpellRare    guisp=Magenta                                   gui=undercurl
+<<<<<<< HEAD
 hi StatusLine   guifg=#FFFEEE           guibg=#557788     gui=NONE
 " hi StatusLineNC guifg=#EAE6E2           guibg=LightSteelBlue3    gui=italic
 hi StatusLineNC guifg=#F4F4EE           guibg=#99aabb    gui=italic
+=======
+hi StatusLine   guifg=white             guibg=LightSkyBlue4     gui=NONE
+hi StatusLineNC guifg=ivory1            guibg=LightSteelBlue    gui=NONE
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 hi TabLine      guifg=fg                guibg=LightGrey         gui=underline
 hi TabLineFill  guifg=fg                guibg=bg                gui=reverse
 hi TabLineSel   guifg=fg                guibg=bg                gui=bold
 hi Title        guifg=DeepSkyBlue3      guibg=bg                gui=bold
+<<<<<<< HEAD
 hi VertSplit    guifg=#99aabb     guibg=#99aabb
+=======
+hi VertSplit    guifg=ivory1            guibg=LightSkyBlue4     gui=NONE
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 hi Visual       guifg=white             guibg=DeepSkyBlue1      gui=NONE
 hi WarningMsg   guifg=Firebrick2        guibg=bg                gui=NONE
 hi WildMenu     guifg=Black             guibg=SkyBlue           gui=NONE
 " }}}
 
+<<<<<<< HEAD
 " 256-Color Terminal Colors, by Clayton Parker {{{1
 " =============================================================================
 hi Normal cterm=NONE ctermfg=16  ctermbg=255
@@ -207,6 +262,8 @@ hi WildMenu     ctermfg=16              ctermbg=117             cterm=NONE
 
 " 1}}}
 
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 "  Syntax {{{1
 " =============================================================================
 
@@ -246,8 +303,12 @@ hi WildMenu     ctermfg=16              ctermbg=117             cterm=NONE
 "       Debug          debugging statements
 "   *Error          any erroneous construct
 "   *Todo           anything that needs extra attention
+<<<<<<< HEAD
 " hi Comment      guifg=#A2B5CD         guibg=NONE      gui=italic
 hi Comment      guifg=#96AAC2         guibg=NONE      gui=italic
+=======
+hi Comment      guifg=SlateGray3        guibg=NONE      gui=italic
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 hi Constant     guifg=DarkOrange        guibg=NONE      gui=NONE
     hi String   guifg=Aquamarine4       guibg=NONE      gui=NONE
     hi Boolean  guifg=IndianRed4        guibg=NONE      gui=NONE
@@ -271,6 +332,7 @@ hi VimCommentTitle  guifg=DarkSlateGray4 guibg=bg      gui=bold,italic
 
 " QuickFix {{{2
 " -----------------------------------------------------------------------------
+<<<<<<< HEAD
 
 " syn match qfFileName  "^[^|]*" nextgroup=qfSeparator
 " syn match qfSeparator "|" nextgroup=qfLineNr contained
@@ -279,6 +341,9 @@ hi VimCommentTitle  guifg=DarkSlateGray4 guibg=bg      gui=bold,italic
 hi qfFileName  guifg=LightSkyBlue4     guibg=NONE      gui=italic
 hi qfLineNr    guifg=coral             guibg=NONE      gui=bold
 hi qfError     guifg=red               guibg=NONE      gui=bold
+=======
+hi qfLineNr         guifg=black          guibg=green1      gui=bold
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 " 2}}}
 
 " Python {{{2
@@ -307,6 +372,7 @@ hi link diffSubname     diffLine
 hi link diffComment     Comment
 " 2}}}
 
+<<<<<<< HEAD
 " PHP (contributed by Ryan Kulla) {{{2
 " -----------------------------------------------------------------------------
 " Ryan Kulla's addition for PHP syntax highlighting (for regular/terminal vim)
@@ -341,3 +407,6 @@ hi phpBoolean ctermfg=58 cterm=NONE guifg=brown
 
 " 1}}}
 
+=======
+" 1}}}
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc

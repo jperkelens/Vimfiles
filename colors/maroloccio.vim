@@ -1,4 +1,5 @@
 " File        : maroloccio.vim
+<<<<<<< HEAD
 " Description : An easy-on-the-eyes dark background colour scheme for Vim
 " Scheme      : maroloccio
 " Maintainer  : Marco Ippolito <maroloccio[at]gmail.com>
@@ -12,6 +13,17 @@
 " History:
 "
 " 0.3.1 Added licensing terms and invitation to provide improvement suggestions
+=======
+" Description : a colour scheme for Vim (GUI only)
+" Scheme      : maroloccio
+" Maintainer  : Marco Ippolito < m a r o l o c c i o [at] g m a i l . c o m >
+" Comment     : works well in GUI mode
+" Version     : v0.3.0 inspired by watermark
+" Date        : 6 may 2009
+"
+" History:
+"
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 " 0.3.0 Greatly improved cterm colours when t_Co=256 thanks to Kyle and CSApprox
 " 0.2.9 Improved readability of cterm searches for dark backgrounds
 " 0.2.8 Added VimDiff colouring
@@ -288,7 +300,11 @@ elseif &t_Co == 256
     CSAHi Statement term=bold ctermbg=59 ctermfg=140
     CSAHi Underlined term=underline cterm=bold,underline ctermfg=147
     CSAHi CursorLine term=underline cterm=underline ctermbg=black
+<<<<<<< HEAD
     CSAHi CursorColumn term=reverse ctermfg=white ctermbg=30
+=======
+    CSAHi CursorColumn term=reverse ctermfg=white ctermbg=29
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
     CSAHi Include ctermbg=59 ctermfg=97
     CSAHi Define ctermbg=59 ctermfg=97
     CSAHi Macro ctermbg=59 ctermfg=97
@@ -372,7 +388,11 @@ elseif &t_Co == 256
     CSAHi Statement term=bold ctermbg=59 ctermfg=177
     CSAHi Underlined term=underline cterm=bold,underline ctermfg=153
     CSAHi CursorLine term=underline cterm=underline ctermbg=black
+<<<<<<< HEAD
     CSAHi CursorColumn term=reverse ctermfg=white ctermbg=30
+=======
+    CSAHi CursorColumn term=reverse ctermfg=white ctermbg=36
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
     CSAHi Include ctermbg=59 ctermfg=134
     CSAHi Define ctermbg=59 ctermfg=134
     CSAHi Macro ctermbg=59 ctermfg=134
@@ -456,7 +476,11 @@ elseif &t_Co == 256
     CSAHi Statement term=bold ctermbg=16 ctermfg=98
     CSAHi Underlined term=underline cterm=bold,underline ctermfg=111
     CSAHi CursorLine term=underline cterm=underline ctermbg=black
+<<<<<<< HEAD
     CSAHi CursorColumn term=reverse ctermbg=103 ctermfg=16
+=======
+    CSAHi CursorColumn term=reverse ctermbg=23 ctermfg=white
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
     CSAHi Include ctermbg=16 ctermfg=91
     CSAHi Define ctermbg=16 ctermfg=91
     CSAHi Macro ctermbg=16 ctermfg=91
@@ -540,7 +564,11 @@ elseif &t_Co == 256
     CSAHi Statement term=bold ctermbg=80 ctermfg=38
     CSAHi Underlined term=underline cterm=bold,underline ctermfg=39
     CSAHi CursorLine term=underline ctermbg=black
+<<<<<<< HEAD
     CSAHi CursorColumn term=reverse ctermbg=21 ctermfg=white
+=======
+    CSAHi CursorColumn term=reverse ctermbg=20 ctermfg=white
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
     CSAHi Include ctermbg=80 ctermfg=33
     CSAHi Define ctermbg=80 ctermfg=33
     CSAHi Macro ctermbg=80 ctermfg=33

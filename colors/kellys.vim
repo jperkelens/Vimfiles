@@ -1,6 +1,7 @@
 " Description:	a colour scheme inspired by kellys bicycles
 "  Maintainer:	kamil.stachowski@gmail.com
 "     License:	gpl 3+
+<<<<<<< HEAD
 "     Version:	0.4 (2011.01.11)
 
 " changelog:
@@ -10,6 +11,11 @@
 "         		linked htmlItalic to Underlined
 "         		added Conceal
 "         		added netrw
+=======
+"     Version:	0.3 (2008.12.07)
+
+" changelog:
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 "         0.3:	2008.12.07
 "				finished ada, haskell, html, lisp, pascal, php, python, ruby, scheme, sh, xml and vim
 "				changed preproc to slightly darker
@@ -38,17 +44,27 @@ let colors_name = "kellys"
 " blue			62acce	81
 " blue slight	9ab2c8	74
 " brown slight	d1c79e	144
+<<<<<<< HEAD
 " green yellowy	d1d435	184
+=======
+" green	yellowy	d1d435	184
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 " grey dark		67686b	240
 " grey light	e1e0e5	254
 " orange		e6ac32	178
 " red			9d0e15	124
+<<<<<<< HEAD
 " +
 " green			00d700	40
+=======
+
+" tabline
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 
 if has("gui_running")
 	hi Comment		guifg=#67686b	guibg=#2a2b2f	gui=none
 	hi Cursor 		guifg=#2a2b2f	guibg=#e1e0e5	gui=none
+<<<<<<< HEAD
 	hi Conceal		guifg=#e1e0e5	guibg=#67686b	gui=none
 	hi Constant 	guifg=#d1c79e	guibg=#2a2b2f	gui=none
 	hi CursorLine		          	guibg=#303132	gui=none
@@ -57,6 +73,14 @@ if has("gui_running")
 	hi DiffDelete	guifg=#67686b	guibg=#2a2b2f	gui=none
 	hi DiffText		guifg=#9d0e15	guibg=#d1c79e	gui=none
 	hi Error		guifg=#9d0e15	guibg=#2a2b2f	gui=underline
+=======
+	hi Constant 	guifg=#d1c79e	guibg=#2a2b2f	gui=none
+	hi CursorLine		          	guibg=#303132	gui=none
+	hi DiffAdd		guifg=#2a2b2f	guibg=#9ab2c8	gui=none
+	hi DiffChange	guifg=#2a2b2f	guibg=#d1c79e	gui=none
+	hi DiffDelete	guifg=#67686b	guibg=#2a2b2f	gui=none
+	hi DiffText		guifg=#9d0e15	guibg=#d1c79e	gui=none
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 	hi Folded 		guifg=#2a2b2f	guibg=#67686b	gui=none
 	hi MatchParen	guifg=#d1d435	guibg=#2a2b2f	gui=bold,underline
 	hi ModeMsg		guifg=#e1e0e5	guibg=#2a2b2f	gui=bold
@@ -75,6 +99,7 @@ if has("gui_running")
 	hi Type 		guifg=#e6ac32	guibg=#2a2b2f	gui=none
 	hi Underlined	guifg=#e1e0e5	guibg=#2a2b2f	gui=underline
 	hi Visual		guifg=#2a2b2f	guibg=#e1e0e5	gui=none
+<<<<<<< HEAD
 	hi Wildmenu		guifg=#00d700	guibg=#2a2b2f	gui=none
 else
 	if &t_Co == 256
@@ -88,6 +113,19 @@ else
 		hi DiffDelete	ctermfg=239	ctermbg=235	cterm=none
 		hi DiffText		ctermfg=124	ctermbg=144	cterm=none
 		hi Error		ctermfg=254	ctermbg=235	cterm=underline
+=======
+	hi Wildmenu		guifg=#62acce	guibg=#2a2b2f	gui=bold
+else
+	if &t_Co == 256
+		hi Comment		ctermfg=239	ctermbg=235	cterm=none
+		hi Cursor 		ctermfg=235	ctermbg=254	cterm=none
+		hi Constant 	ctermfg=144	ctermbg=235	cterm=none
+		hi CursorLine		       	ctermbg=236	cterm=none
+		hi DiffAdd		ctermfg=235	ctermbg=74	cterm=none
+		hi DiffChange	ctermfg=235	ctermbg=144	cterm=none
+		hi DiffDelete	ctermfg=239	ctermbg=235	cterm=none
+		hi DiffText		ctermfg=124	ctermbg=144	cterm=none
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 		hi Folded 		ctermfg=239	ctermbg=235	cterm=none
 		hi MatchParen	ctermfg=184	ctermbg=235	cterm=bold,underline
 		hi ModeMsg		ctermfg=254	ctermbg=235	cterm=bold
@@ -103,10 +141,17 @@ else
 		hi StatusLine 	ctermfg=235	ctermbg=81	cterm=bold
 		hi StatusLineNC ctermfg=235	ctermbg=254	cterm=none
 		hi Todo 		ctermfg=254	ctermbg=124	cterm=bold
+<<<<<<< HEAD
 		hi Type 		ctermfg=178	ctermbg=235	cterm=none
 		hi Underlined	ctermfg=254	ctermbg=235	cterm=underline
 		hi Visual		ctermfg=235	ctermbg=255	cterm=none
 		hi Wildmenu		ctermfg=40	ctermbg=235	cterm=none
+=======
+		hi Type 		ctermfg=178	ctermbg=234	cterm=none
+		hi Underlined	ctermfg=254	ctermbg=234	cterm=underline
+		hi Visual		ctermfg=235	ctermbg=254	cterm=none
+		hi Wildmenu		ctermfg=81	ctermbg=234	cterm=bold
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 	endif
 endif
 
@@ -118,7 +163,11 @@ hi! link Debug			Special
 hi! link Define			PreProc
 hi! link Delimiter		Special
 hi! link Directory		Type
+<<<<<<< HEAD
 hi! link Error			Error
+=======
+hi! link Error			Todo
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 hi! link ErrorMsg		Error
 hi! link Exception		Statement
 hi! link Float			Constant
@@ -142,7 +191,11 @@ hi! link Repeat			Statement
 hi! link SignColumn		FoldColumn
 hi! link SpecialChar	Special
 hi! link SpecialComment	Special
+<<<<<<< HEAD
 hi! link SpecialKey		Comment
+=======
+hi! link SpecialKey		Special
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 hi! link SpellBad		Error
 hi! link SpellCap		Error
 hi! link SpellLocal		Error
@@ -170,7 +223,10 @@ hi! link hsConSym			Operator
 " html
 hi! link htmlArg			Statement
 hi! link htmlEndTag			Special
+<<<<<<< HEAD
 hi! link htmlItalic			Underlined
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 hi! link htmlLink			Underlined
 hi! link htmlSpecialTagName	PreProc
 hi! link htmlTag			Special
@@ -184,10 +240,13 @@ hi! link lispConcat			Special
 hi! link lispDecl			Type
 hi! link lispFunc			Special
 hi! link lispKey			PreProc
+<<<<<<< HEAD
 " netrw
 hi! link netrwDir			Special
 hi! link netrwExe			Wildmenu
 hi! link netrwSymLink		Statement
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 " pas
 hi! link pascalAsmKey		Statement
 hi! link pascalDirective	PreProc
@@ -197,7 +256,11 @@ hi! link pascalStatement	Type
 hi! link pascalStruct		Type
 " php
 hi! link phpComparison		Special
+<<<<<<< HEAD
 hi! link phpDefine			Type
+=======
+hi! link phpDefine			Normal
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 hi! link phpIdentifier		Normal
 hi! link phpMemberSelector	Special
 hi! link phpRegion			Special
@@ -220,6 +283,7 @@ hi! link shStatement		Special
 hi! link shVariable			Normal
 " sql
 hi! link sqlKeyword			Statement
+<<<<<<< HEAD
 " tex
 hi! link texDocType			PreProc
 hi! link texLigature		Constant
@@ -232,6 +296,8 @@ hi! link texSectionMarker	Type
 hi! link texSectionModifier	Constant
 hi! link texTypeSize		Special
 hi! link texTypeStyle		Special
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 " vim
 hi! link vimCommand			Statement
 hi! link vimCommentTitle	Normal
@@ -261,6 +327,7 @@ hi! link xmlEndTag			Statement
 hi! link xmlProcessingDelim	PreProc
 hi! link xmlNamespace		PreProc
 hi! link xmlTagName			Statement
+<<<<<<< HEAD
 
 " hi! link TexTypeStyle		Comment
 " hi! link TexStatement		Comment
@@ -269,3 +336,5 @@ hi! link xmlTagName			Statement
 " hi! link TexSectionMarker	Comment
 " hi! link Delimiter			Comment
 " hi! link TexMatcher			Comment
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc

@@ -1,8 +1,13 @@
 " Vim color file --- psc (peak sea color) "Lite version"
 " Maintainer:	Pan, Shi Zhu <Go to the following URL for my email>
 " URL:		http://vim.sourceforge.net/scripts/script.php?script_id=760
+<<<<<<< HEAD
 " Last Change:	5 Feb 2010
 " Version:	3.4
+=======
+" Last Change:	31 Oct 2008
+" Version:	3.3
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 "
 "	Comments and e-mails are welcomed, thanks.
 "
@@ -16,8 +21,14 @@
 " Note: Please set the background option in your .vimrc and/or .gvimrc
 "
 "	It is much better *not* to set 'background' option inside
+<<<<<<< HEAD
 "	a colorscheme file.  because ":set background" improperly
 "	may cause colorscheme be sourced twice
+=======
+"	a colorscheme file.  because ":set background" inside a colorscheme
+"	may cause colorscheme be sourced twice or in the worst case result an
+"	infinite loop.
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 "
 " Color Scheme Overview: 
 "	:ru syntax/hitest.vim
@@ -148,11 +159,14 @@ if &background=='light'
 
   " gui define for background=light end here
 
+<<<<<<< HEAD
   " generally, a dumb terminal is dark, we assume the light terminal has 256
   " color support.
   if &t_Co==8 || &t_Co==16
     set t_Co=256
   endif
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
   if &t_Co==256
     " 256color light terminal support here
 
@@ -252,7 +266,11 @@ if &background=='light'
     hi ModeMsg		cterm=bold
     hi TabLineSel	cterm=bold
 
+<<<<<<< HEAD
     "hi lCursor		ctermfg=bg	ctermbg=fg	cterm=NONE
+=======
+    hi lCursor		ctermfg=bg	ctermbg=fg	cterm=NONE
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
   endif " t_Co==256
   " }}}2
 elseif &background=='dark' 

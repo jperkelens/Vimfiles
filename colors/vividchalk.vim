@@ -1,8 +1,13 @@
 " Vim color scheme
 " Name:         vividchalk.vim
 " Author:       Tim Pope <vimNOSPAM@tpope.info>
+<<<<<<< HEAD
 " Version:      2.0
 " GetLatestVimScripts: 1891 1 :AutoInstall: vividchalk.vim
+=======
+" GetLatestVimScripts: 1891 1 :AutoInstall: vividchalk.vim
+" $Id: vividchalk.vim,v 1.8 2007-07-11 18:50:16 tpope Exp $
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 
 " Based on the Vibrank Ink theme for TextMate
 " Distributable under the same terms as Vim itself (see :help license)
@@ -89,10 +94,13 @@ hi link rubyRegexpDelimiter rubyRegexp
 hi link javascriptRegexpString  Regexp
 hi link javascriptNumber        Number
 hi link javascriptNull          Constant
+<<<<<<< HEAD
 highlight link diffAdded        String
 highlight link diffRemoved      Statement
 highlight link diffLine         PreProc
 highlight link diffSubname      Comment
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 
 call s:hifg("Normal","#EEEEEE","White",87)
 if &background == "light" || has("gui_running")
@@ -107,8 +115,11 @@ highlight StatusLineNC  guifg=#444444 guibg=#aaaaaa gui=none ctermfg=Black cterm
 "else
     "highlight StatusLine ctermbg=43
 "endif
+<<<<<<< HEAD
 
 highlight Ignore        ctermfg=Black
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 highlight WildMenu      guifg=Black   guibg=#ffff00 gui=bold ctermfg=Black ctermbg=Yellow cterm=bold
 highlight Cursor        guifg=Black guibg=White ctermfg=Black ctermbg=White
 highlight CursorLine    guibg=#333333 guifg=NONE
@@ -119,7 +130,11 @@ highlight Directory     none
 high link Directory     Identifier
 highlight ErrorMsg      guibg=Red ctermbg=DarkRed guifg=NONE ctermfg=NONE
 highlight Search        guifg=NONE ctermfg=NONE gui=none cterm=none
+<<<<<<< HEAD
 call s:hibg("Search"    ,"#555555","DarkBlue",81)
+=======
+call s:hibg("Search"    ,"#555555","Black",81)
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 highlight IncSearch     guifg=White guibg=Black ctermfg=White ctermbg=Black
 highlight MoreMsg       guifg=#00AA00 ctermfg=Green
 highlight LineNr        guifg=#DDEEFF ctermfg=White
@@ -130,6 +145,7 @@ highlight Title         guifg=Magenta ctermfg=Magenta
 highlight VisualNOS     gui=none cterm=none
 call s:hibg("Visual"    ,"#555577","LightBlue",83)
 call s:hibg("VisualNOS" ,"#444444","DarkBlue",81)
+<<<<<<< HEAD
 call s:hibg("MatchParen","#1100AA","DarkBlue",18)
 highlight WarningMsg    guifg=Red ctermfg=Red
 highlight Error         ctermbg=DarkRed
@@ -139,16 +155,23 @@ highlight SpellRare     ctermbg=DarkMagenta
 highlight SpellCap      ctermbg=DarkBlue
 highlight SpellLocal    ctermbg=DarkCyan
 
+=======
+highlight WarningMsg    guifg=Red ctermfg=Red
+highlight Folded        guibg=#1100aa ctermbg=DarkBlue
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 call s:hibg("Folded"    ,"#110077","DarkBlue",17)
 call s:hifg("Folded"    ,"#aaddee","LightCyan",63)
 highlight FoldColumn    none
 high link FoldColumn    Folded
+<<<<<<< HEAD
 highlight DiffAdd       ctermbg=4 guibg=DarkBlue
 highlight DiffChange    ctermbg=5 guibg=DarkMagenta
 highlight DiffDelete    ctermfg=12 ctermbg=6 gui=bold guifg=Blue guibg=DarkCyan
 highlight DiffText      ctermbg=DarkRed
 highlight DiffText      cterm=bold ctermbg=9 gui=bold guibg=Red
 
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 highlight Pmenu         guifg=White ctermfg=White gui=bold cterm=bold
 highlight PmenuSel      guifg=White ctermfg=White gui=bold cterm=bold
 call s:hibg("Pmenu"     ,"#000099","Blue",18)

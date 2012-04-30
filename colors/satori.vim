@@ -1,6 +1,11 @@
 " Vim color file
+<<<<<<< HEAD
 " Maintainer: Rudá Moura <ruda.moura@gmail.com>
 " Last Change: Mon Oct 18 23:09:26 BRST 2010
+=======
+" Maintainer: Ruda Moura <ruda@rudix.org>
+" Last Change: Sun Feb 24 18:50:47 BRT 2008
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 
 highlight clear Normal
 set background&
@@ -23,10 +28,13 @@ highlight Statement  ctermfg=NONE    cterm=Bold
 highlight PreProc    ctermfg=Blue    cterm=NONE
 highlight Type       ctermfg=Magenta cterm=NONE
 highlight Special    ctermfg=Magenta cterm=NONE
+<<<<<<< HEAD
 highlight Search     ctermbg=Green   cterm=NONE
 highlight MatchParen ctermbg=NONE    cterm=Inverse
 highlight Error      ctermbg=Red     cterm=NONE
 highlight Todo	     ctermbg=Cyan    cterm=NONE
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 
 " Vim monochrome
 highlight Normal     term=NONE
@@ -49,6 +57,9 @@ highlight Statement  guifg=NONE     gui=Bold
 highlight PreProc    guifg=Blue     gui=NONE
 highlight Type       guifg=Magenta  gui=NONE
 highlight Special    guifg=Red      gui=Bold
+<<<<<<< HEAD
 highlight Search     guifg=Green    gui=NONE
 highlight Error	     guifg=Red	    gui=NONE
 highlight Todo	     guifg=Cyan	    gui=NONE
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc

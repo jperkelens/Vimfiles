@@ -1,5 +1,9 @@
 " ir_black color scheme
+<<<<<<< HEAD
 " More at: http://blog.infinitered.com/entries/show/8
+=======
+" More at: http://blog.infinitered.com/entries/show/8 
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 
 
 " ********************************************************************************
