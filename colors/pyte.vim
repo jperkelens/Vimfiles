@@ -3,12 +3,32 @@ set background=light
 
 hi clear
 if exists("syntax_on")
+<<<<<<< HEAD
+  syntax reset
+=======
     syntax reset
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 endif
 
 let colors_name = "pyte"
 
 if version >= 700
+<<<<<<< HEAD
+  hi CursorLine guibg=#f6f6f6
+  hi CursorColumn guibg=#eaeaea
+  hi MatchParen guifg=white guibg=#80a090 gui=bold
+
+  "Tabpages
+  hi TabLine guifg=black guibg=#b0b8c0 gui=italic
+  hi TabLineFill guifg=#9098a0
+  hi TabLineSel guifg=black guibg=#f0f0f0 gui=italic,bold
+
+  "P-Menu (auto-completion)
+  hi Pmenu guifg=white guibg=#808080
+  "PmenuSel
+  "PmenuSbar
+  "PmenuThumb
+=======
     hi CursorLine guibg=#f6f6f6
     hi CursorColumn guibg=#eaeaea
     hi MatchParen guifg=white guibg=#80a090 gui=bold
@@ -23,6 +43,7 @@ if version >= 700
     "PmenuSel
     "PmenuSbar
     "PmenuThumb
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 endif
 "
 " Html-Titles
@@ -34,13 +55,22 @@ hi Cursor    guifg=black   guibg=#b0b4b8
 hi lCursor   guifg=black   guibg=white
 hi LineNr    guifg=#ffffff guibg=#c0d0e0
 
+<<<<<<< HEAD
+hi Normal    guifg=#404850   guibg=#f0f0f0
+=======
 hi Normal    guifg=#202020   guibg=#f0f0f0
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 
 hi StatusLine guifg=white guibg=#8090a0 gui=bold,italic
 hi StatusLineNC guifg=#506070 guibg=#a0b0c0 gui=italic
 hi VertSplit guifg=#a0b0c0 guibg=#a0b0c0 gui=NONE
 
+<<<<<<< HEAD
+" hi Folded    guifg=#708090 guibg=#c0d0e0
+hi Folded    guifg=#a0a0a0 guibg=#e8e8e8 gui=italic
+=======
 hi Folded    guifg=#708090 guibg=#c0d0e0
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 
 hi NonText   guifg=#c0c0c0 guibg=#e0e0e0
 " Kommentare
@@ -81,7 +111,12 @@ hi Special    guifg=#70a0d0 gui=italic
 hi Operator   guifg=#408010
 
 " color of <TAB>s etc...  
+<<<<<<< HEAD
+"hi SpecialKey guifg=#d8a080 guibg=#e8e8e8 gui=italic  
+hi SpecialKey guifg=#d0b0b0 guibg=#f0f0f0 gui=none
+=======
 hi SpecialKey guifg=#d8a080 guibg=#e8e8e8 gui=italic  
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 
 " Diff
 hi DiffChange guifg=NONE guibg=#e0e0e0 gui=italic,bold

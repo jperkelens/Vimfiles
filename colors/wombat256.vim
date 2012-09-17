@@ -240,7 +240,11 @@ call <SID>X("CursorColumn",	"",			"2d2d2d",	"")
 			"CursorIM
 			"Question
 			"IncSearch
+<<<<<<< HEAD
+call <SID>X("Search",		"d787ff",	"5f5f5f",	"")
+=======
 call <SID>X("Search",		"444444",	"af87d7",	"")
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 call <SID>X("MatchParen",	"ecee90",	"857b6f",	"bold")
 call <SID>X("SpecialKey",	"6c6c6c",	"2d2d2d",	"none")
 call <SID>X("Visual",		"ecee90",	"597418",	"none")

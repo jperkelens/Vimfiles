@@ -1,11 +1,19 @@
 " Vim color File
 " Name:			biogoo
 " Maintainer:	Benjamin Esham <bdesham@gmail.com>
+<<<<<<< HEAD
+" Last Change:	2010-08-16
+" Version:		1.6.1
+"
+" Colorful text on a light gray background.  It's pretty easy on the eyes in my
+" opinion.  Any feedback is greatly appreciated!
+=======
 " Last Change:	2006-11-20
 " Version:		1.5
 "
 " Colorful text on a light gray background.  It's pretty easy on the eyes in
 " my opinion.  Any feedback is greatly appreciated!
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 "
 " Installation:
 "	Copy to ~/.vim/colors; do :color biogoo
@@ -14,6 +22,29 @@
 "	Use a 'normal' cursor color:
 "		let g:biogoo_normal_cursor = 1
 "
+<<<<<<< HEAD
+" Thanks:
+"	Jani Nurminen's zenburn.vim as an example file.
+"	Scott F., Matt F., and sc for feature suggestions/bug reports.
+"	Bill McCarthy for his Vim mailing list post about Vim 7 support.
+"
+" Version History:
+"	1.6.1:	fixed some oversights in 1.6
+"	1.6:	swapped the spelling-error color so that setting 'cursorline' or
+"			'cursorcolumn' doesn't make words invisible; added "ColorColumn" to
+"			support 'colorcolumn' in Vim 7.3
+"	1.5:	should fully support Vim 7 now
+"	1.4:	more Vim 7 support: added the "MatchParen" group for ()[]{} matching
+"	1.3:	added support for Vim 7: added groups for the new spellchecking, and
+"			added a conditional to display Visual mode correctly in any version
+"	1.2:	added "SpellErrors" group for use with vimspell
+"	1.1:	added "IncSearch" group for improved visibility in incremental
+"			searches
+"	1.0:	minor tweaks
+"	0.95:	initial release
+"
+" I will add new groups as requested... e-mail me with any suggestions!
+=======
 " Props:
 "	Jani Nurminen's zenburn.vim as an example file.
 "	Scott F. and Matt F. for feature suggestions.
@@ -30,6 +61,7 @@
 "	0.95:	initial release
 "
 " TODO: Add new groups as needed.  E-mail me with any suggestions!
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 
 set background=light
 hi clear
@@ -39,6 +71,10 @@ endif
 let g:colors_name = "biogoo"
 
 hi Comment			guifg=#0000c3
+<<<<<<< HEAD
+hi ColorColumn		guibg=#e0e0e0
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 hi Constant			guifg=#0000ff
 hi CursorColumn		guibg=#ffffff
 hi CursorLine		guibg=#ffffff
@@ -77,10 +113,17 @@ hi Question			guifg=#00007f
 hi Search			guibg=#ffff00
 hi Special			guifg=#007f00
 hi SpecialKey		guifg=#00007f
+<<<<<<< HEAD
+hi SpellBad			guifg=#7f0000 guibg=#f0f0f0 gui=undercurl guisp=#7f0000
+hi SpellCap			guifg=#7f007f guibg=#f0f0f0 gui=undercurl guisp=#7f007f
+hi SpellLocal		guifg=#007f7f guibg=#f0f0f0 gui=undercurl guisp=#007f7f
+hi SpellRare		guifg=#b85d00 guibg=#f0f0f0 gui=undercurl guisp=#b85d00
+=======
 hi SpellBad			guifg=#ffffff guibg=#7f0000 gui=undercurl guisp=#d6d6d6
 hi SpellCap			guifg=#ffffff guibg=#7f007f gui=undercurl guisp=#d6d6d6
 hi SpellLocal		guifg=#ffffff guibg=#007f7f gui=undercurl guisp=#d6d6d6
 hi SpellRare		guifg=#ffffff guibg=#b85d00 gui=undercurl guisp=#d6d6d6
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 hi Statement		guifg=#00007f gui=none
 hi StatusLine		guifg=#00007f guibg=#ffffff
 hi StatusLineNC		guifg=#676767 guibg=#ffffff
@@ -105,11 +148,19 @@ hi WildMenu			guifg=#540054
 " Non-standard highlighting (e.g. for plugins)
 
 " vimspell
+<<<<<<< HEAD
+hi SpellErrors		guibg=#f0f0f0 guifg=#7f0000 gui=undercurl guisp=#7f0000
+=======
 hi SpellErrors		guifg=#ffffff guibg=#7f0000 gui=undercurl guisp=#d6d6d6
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
 
 if !exists("g:biogoo_normal_cursor")
 	" use a gray-on-blue cursor
 	hi Cursor		guifg=#ffffff guibg=#00007f
 endif
 
+<<<<<<< HEAD
+" vim:noet:ts=4 sw=4 tw=80 cc=+1
+=======
 " vim:noet:ts=4 sw=4
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc

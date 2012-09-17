@@ -114,3 +114,12 @@ hi Keyword 	        guibg=white		guifg=#141312	gui=NONE
 
 hi link SpecialComment 	Special
 hi link Debug		Special
+<<<<<<< HEAD
+	"doesn't fit at the end of the line).
+hi NonText          guibg=white		guifg=black		gui=none
+hi Keyword 	        guibg=white		guifg=#141312	gui=NONE
+
+hi link SpecialComment 	Special
+hi link Debug		Special
+=======
+>>>>>>> 4ae595656334a4854e69fd4dbc8c5398cd96d6bc
