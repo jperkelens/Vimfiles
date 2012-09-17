@@ -1,6 +1,7 @@
 set nocompatible
 filetype plugin indent on
 syntax on
+colorscheme koehler
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -34,17 +35,32 @@ Bundle 'vim-stylus'
 Bundle 'https://github.com/Townk/vim-autoclose.git'
 " Quoting and blocking 
 Bundle 'https://github.com/tpope/vim-surround.git'
-" Coffee Script
-Bundle 'https://github.com/vim-scripts/vim-coffee-script.git'
 
 " -------- Syntax Coloring and indents -------
 
 " Javascript text hilighting
 Bundle 'pangloss/vim-javascript.git'
+" Coffee Script
+Bundle 'https://github.com/vim-scripts/vim-coffee-script.git'
+" Jade
+Bundle 'https://github.com/digitaltoad/vim-jade.git'
 " Cucumber
 Bundle 'cucumber.zip'
 " Clojure
 Bundle 'VimClojure'
+
+" Javascript folding
+function! JavaScriptFold() 
+    setl foldmethod=syntax
+    setl foldlevelstart=1
+    syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
+
+    function! FoldText()
+        return substitute(getline(v:foldstart), '{.*', '{...}', '')
+    endfunction
+    setl foldtext=FoldText()
+endfunction
+au FileType javascript call JavaScriptFold()
 
 set ar
 set expandtab
@@ -94,13 +110,25 @@ function! s:RunTestFile()
   endif
 
   if g:CurrentTestExt == "js"
-    execute "w\|!TEST=true NODE_PATH=test:lib expresso -I test -I lib -t 250
-      \ -s " . g:CurrentTestFile 
+    execute "w\|!mocha -R spec -t 200 " . g:CurrentTestFile
   elseif g:CurrentTestExt == "clj"
     execute "w\|!echo \"I can't do this yet\""
+  elseif g:CurrentTestExt == "rb"
+    execute "w\|!rspec " . g:CurrentTestFile
+  elseif g:CurrentTestExt == "feature"
+    execute "w\|!cucumber " . g:CurrentTestFile
   endif
 endfunction
+
+function! s:RunCukes()
+  :w
+  :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
+
+  execute "w\|!cucumber --tags @focus"
+endfunction
+
 command! -nargs=0 RunTestFile call s:RunTestFile()
+command! -nargs=0 RunCukes call s:RunCukes()
 
 let mapleader = ","
 let maplocalleader = ","
@@ -125,6 +153,7 @@ map <Leader>; :SetTestFile<CR>
 noremap <Leader>at :AlignFitTables<CR>
 noremap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>as ysiw
+map <Leader>c :RunCukes<CR>
 
 " bufexplorer
 let g:bufExplorerDefaultHelp=1
