@@ -61,6 +61,7 @@ function! JavaScriptFold()
     setl foldtext=FoldText()
 endfunction
 au FileType javascript call JavaScriptFold()
+au FileType java call JavaScriptFold()
 
 set ar
 set expandtab
@@ -72,7 +73,7 @@ set noswapfile
 set nu
 set shiftwidth=2
 set tabstop=2
-set wildignore+=.git,.svn,**/node_modules/*,DS_Store,*.log,*.sock
+set wildignore+=.git,.svn,**/node_modules/*,DS_Store,*.log,*.sock,**/lib-cov/*,**/covershot/*
 set wildignore+=*.png,*.gif,*.jpg,*.jpeg,*.class,nohup.out,*.swp
 set wildignore+=*.tmproj,*.pid,**/tmp/*
 set wildmenu
@@ -110,7 +111,7 @@ function! s:RunTestFile()
   endif
 
   if g:CurrentTestExt == "js"
-    execute "w\|!mocha -R spec -t 200 " . g:CurrentTestFile
+    execute "w\|!rm -rf lib-cov && mocha --hasCert i -R spec -t 550 " . g:CurrentTestFile
   elseif g:CurrentTestExt == "clj"
     execute "w\|!echo \"I can't do this yet\""
   elseif g:CurrentTestExt == "rb"
