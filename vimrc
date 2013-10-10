@@ -33,8 +33,9 @@ Bundle 'The-NERD-tree'
 Bundle 'vim-stylus'
 " Autoclose parens etc.
 Bundle 'https://github.com/Townk/vim-autoclose.git'
-" Quoting and blocking 
+" Quoting and blocking
 Bundle 'https://github.com/tpope/vim-surround.git'
+Bundle 'ack.vim'
 
 " -------- Syntax Coloring and indents -------
 
@@ -48,9 +49,10 @@ Bundle 'https://github.com/digitaltoad/vim-jade.git'
 Bundle 'cucumber.zip'
 " Clojure
 Bundle 'VimClojure'
+Bundle "jade.vim"
 
 " Javascript folding
-function! JavaScriptFold() 
+function! JavaScriptFold()
     setl foldmethod=syntax
     setl foldlevelstart=1
     syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
@@ -81,6 +83,8 @@ set wildmode=list:longest,full
 set wrap
 
 " functions
+autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre *.js :%s/return$/return;/e
 
 " Align Fit Tables
 function! s:alignFitTables()
